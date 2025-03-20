@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0D0D0D;
+    color: white;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.left-panel {
+    width: 20%;
+    background-color: #282A36;
+    /* Changed to a more vibrant and visible color */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+
+
+.right-panel {
+    width: 80%;
+    padding: 2rem;
+    background-color: #1B1B1B;
+    overflow-y: auto;
+}
+
+.profileimg {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 4px solid #6E00FF;
+}
+
+.ed1 {
+    margin-top: -15px;
+}
+
+h2 {
+    margin: 0;
+    padding: 0.5rem 0;
+    color: #6E00FF;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+p {
+    color: #BFBFBF;
+    font-size: 1.1rem;
+}
+
+.logos {
+    margin-left: 0px;
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    align-items: center;
+}
+
+.logos a {
+    transition: transform 0.3s;
+}
+
+.logos a:hover {
+    transform: scale(1.15);
+}
+
+.logos img {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #1C1C1C;
+    transition: background-color 0.3s, filter 0.3s;
+    box-shadow: 0 0 12px rgba(110, 0, 255, 0.6);
+}
+
+.logos img:hover {
+    background-color: #6E00FF;
+    filter: brightness(1.2);
+}
+
+.contact-box {
+    background-color: #222;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skill {
+    text-align: center;
+    background-color: #222;
+    padding: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.skill img {
+    max-width: 60px;
+    height: 60px;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .left-panel {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .right-panel {
+        width: 100%;
+        padding: 1rem;
+    }
+}
